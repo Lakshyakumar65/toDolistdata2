@@ -1,0 +1,80 @@
+body {
+  background-color: #E8ECEF;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+}
+
+/* Remove the problematic margin-top that was causing scrollbar */
+body {
+  margin-top: 0;
+}
+
+.centered {
+  padding-top: 200px;
+  text-align: center;
+  width: 100%;
+}
+
+.jumbotron {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Center the login and register containers */
+#containerr {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+
+}
+
+/* Center the h1 titles */
+#containerr h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Additional centering for smaller screens */
+@media (max-width: 768px) {
+  #containerr {
+    max-width: 90%;
+    padding: 1rem;
+  }
+  
+  .col-sm-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* Make sure the form cards are properly centered */
+.row {
+  justify-content: center;
+}
+
+/* Remove any potential overflow issues */
+.container-fluid {
+  overflow-x: hidden;
+}
+
+/* Ensure proper viewport handling */
+html {
+  overflow-x: hidden;
+}
